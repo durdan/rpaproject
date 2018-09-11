@@ -1,0 +1,214 @@
+
+
+entity Organization{
+      orgName String required,
+      description String ,
+      orgAddress String,
+      orgEmail String required,
+      isActive Integer,
+      createDate Instant,
+      createdBy String,
+      updateDate Instant,
+      updatedBy String
+
+}
+
+entity OrgEmailConfig{
+	  emailServerHost String,
+      emailServerPort Integer,
+      emailServerUserId String,
+      emailServerPassword String
+      createDate Instant,
+      createdBy String,
+      updateDate Instant,
+      updatedBy String
+}
+
+entity Client{
+      clientName String required,
+      description String,
+      clientAddress String,
+      clientEmailAddress String required,
+      isActive Integer,
+      createDate Instant,
+      createdBy String,
+      updateDate Instant,
+      updatedBy String
+}
+
+entity ClientEmailDomain {
+	emailDomain String required,
+    description String,
+    isActive Integer
+}
+
+entity InputTemplate {
+    templateName String required,
+    templateDescription String,
+    isActive Integer,
+    createDate Instant,
+    createdBy String,
+    updateDate Instant,
+    updatedBy String
+}
+
+entity OutputTemplate {
+	  outputTemplateName String,
+      fieldName String required,
+      position String,
+      fieldValidationRequire Integer,
+      fieldValidationRule String //Regex expression
+}
+
+entity TemplateFields {
+      fieldName String required,
+      fieldZoneMinX Double required,
+      fieldZoneMinY Double required,
+      fieldZoneMaxX Double required,
+      fieldZoneMaxY Double required,
+      fieldValidationRequire Integer,
+      fieldValidationRule String //Regex expression
+}
+
+
+entity EmailMessages{
+    messageId String required,
+    emailSubject String required,
+    emailBody String,
+    status String,
+    clientEmailAddress String,
+    receiveFrom String required,//email
+    receivedTime Instant required,
+    numberOfAttachments Integer required,
+    attachments String required//comma separated list
+
+}
+
+entity EmailAttachment{
+	  messageId String,
+      clientEmailAddress String,
+      fileName String required,
+      fileExtension String required,
+      fileLocation String
+}
+
+entity EmailProcessingError{
+      errorMessage String,
+      messageID String required,
+      clientEmailAddress String,
+      receiveFrom String required,
+      receivedTime Instant
+}
+
+entity UploadFiles{
+	clientEmailAddress String,
+    fileName String required,
+    fileExtension String required,
+    uploadBy String,
+    uploadDateTime Instant,
+    uploadLocation String
+}
+
+
+
+entity FileForOCRProcessing {
+    fileInputType String required, //Email or upload
+    status String,
+    messageId String,
+    clientEmailAddress String,
+    retry String,
+    createdDateTime Instant,
+    createdBy String,
+    updateTimeStamp Instant,
+    updateBy Instant
+
+}
+
+
+entity Transaction {
+    createdDateTime Instant,
+    status String,
+    clientEmailAddress String required,
+    messageId String required,
+    fileName String required,
+    processType String,
+    createDate Instant,
+    createdBy String,
+    updateDate Instant,
+    updatedBy String
+}
+
+entity OcrProcessingError {
+	  clientEmailAddress String,
+      messageId String,
+      attachmentId Integer,
+      fileId String,
+      errorMessage String,
+      createdDateTime Instant,
+      errorType String
+}
+
+entity ClientDataOcr {
+  	keyName String,
+    value String,
+    messageId String,
+    clientEmailAddress String,
+    attachmentId Integer
+
+}
+
+entity FileToFtp {
+    messageId String,
+    clientEmailAddress String,
+    status String,
+    fileType String
+
+}
+
+
+//relationship (OneToMany | ManyToOne | OneToOne | ManyToMany) {
+  //<from entity>[{<relationship name>[(<display field>)]}] to <to entity>[{<relationship name>[(<display field>)]}]
+//}
+
+//RelationShip
+ relationship ManyToOne {
+	OrgEmailConfig{orgName(orgName)} to Organization
+    Client{orgName(orgName)} to Organization
+    ClientEmailDomain{client(clientName)} to Client
+    InputTemplate{client(clientEmailAddress)} to Client{inputTemplate(templateName)}
+    TemplateFields{inputTemplate(templateName)} to InputTemplate
+    EmailMessages{client(clientEmailAddress)} to Client
+    UploadFiles{client} to Client
+    ClientDataOcr to Transaction
+    FileToFtp{clientDataOcr(clientEmailAddress)} to ClientDataOcr
+    //Ticket{assignedTo(login)} to User{ticket}
+}
+
+relationship OneToMany {
+EmailMessages{emailAttachment(fileName)} to EmailAttachment{emailMessages(messageId)}
+//Client{templateDetails(templateName)} to TemplateDetails
+Client{outputTemplate(outputTemplateName)} to OutputTemplate
+ClientDataOcr{outputTemplate(outputTemplateName)} to OutputTemplate
+
+}
+
+
+relationship OneToOne {
+	EmailProcessingError to EmailMessages
+    FileForOCRProcessing to EmailAttachment
+    FileForOCRProcessing to UploadFiles
+    Transaction to FileForOCRProcessing
+    OcrProcessingError to Transaction
+}
+
+
+//capture file details once ftp is done
+
+// Set pagination options
+paginate * with pagination
+
+dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl
+

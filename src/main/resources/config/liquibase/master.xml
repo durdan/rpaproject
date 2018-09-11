@@ -5,6 +5,37 @@
     xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
 
     <include file="config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180911192845_added_entity_Organization.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180911192846_added_entity_OrgEmailConfig.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180911192847_added_entity_Client.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180911192848_added_entity_ClientEmailDomain.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180911192849_added_entity_InputTemplate.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180911192850_added_entity_OutputTemplate.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180911192851_added_entity_TemplateFields.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180911192852_added_entity_EmailMessages.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180911192853_added_entity_EmailAttachment.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180911192854_added_entity_EmailProcessingError.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180911192855_added_entity_UploadFiles.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180911192856_added_entity_FileForOCRProcessing.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180911192857_added_entity_Transaction.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180911192858_added_entity_OcrProcessingError.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180911192859_added_entity_ClientDataOcr.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180911192900_added_entity_FileToFtp.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
+    <include file="config/liquibase/changelog/20180911192846_added_entity_constraints_OrgEmailConfig.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180911192847_added_entity_constraints_Client.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180911192848_added_entity_constraints_ClientEmailDomain.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180911192849_added_entity_constraints_InputTemplate.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180911192850_added_entity_constraints_OutputTemplate.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180911192851_added_entity_constraints_TemplateFields.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180911192852_added_entity_constraints_EmailMessages.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180911192853_added_entity_constraints_EmailAttachment.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180911192854_added_entity_constraints_EmailProcessingError.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180911192855_added_entity_constraints_UploadFiles.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180911192856_added_entity_constraints_FileForOCRProcessing.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180911192857_added_entity_constraints_Transaction.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180911192858_added_entity_constraints_OcrProcessingError.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180911192859_added_entity_constraints_ClientDataOcr.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180911192900_added_entity_constraints_FileToFtp.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
 </databaseChangeLog>

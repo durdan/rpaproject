@@ -7,6 +7,22 @@
             "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
             "entities": {
                 "main": "Entities",
+                "organization": "Organization",
+                "orgEmailConfig": "Org Email Config",
+                "client": "Client",
+                "clientEmailDomain": "Client Email Domain",
+                "inputTemplate": "Input Template",
+                "outputTemplate": "Output Template",
+                "templateFields": "Template Fields",
+                "emailMessages": "Email Messages",
+                "emailAttachment": "Email Attachment",
+                "emailProcessingError": "Email Processing Error",
+                "uploadFiles": "Upload Files",
+                "fileForOcrProcessing": "File For OCR Processing",
+                "transaction": "Transaction",
+                "ocrProcessingError": "Ocr Processing Error",
+                "clientDataOcr": "Client Data Ocr",
+                "fileToFtp": "File To Ftp",
                 "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
             },
             "account": {
