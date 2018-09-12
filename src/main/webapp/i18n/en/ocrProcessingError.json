@@ -1,0 +1,29 @@
+
+{
+    "rpaprojectApp": {
+        "ocrProcessingError" : {
+            "home": {
+                "title": "Ocr Processing Errors",
+                "createLabel": "Create a new Ocr Processing Error",
+                "createOrEditLabel": "Create or edit a Ocr Processing Error"
+            },
+            "created": "A new Ocr Processing Error is created with identifier {{ param }}",
+            "updated": "A Ocr Processing Error is updated with identifier {{ param }}",
+            "deleted": "A Ocr Processing Error is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Ocr Processing Error {{ id }}?"
+            },
+            "detail": {
+                "title": "Ocr Processing Error"
+            },
+            "clientEmailAddress": "Client Email Address",
+            "messageId": "Message Id",
+            "attachmentId": "Attachment Id",
+            "fileId": "File Id",
+            "errorMessage": "Error Message",
+            "createdDateTime": "Created Date Time",
+            "errorType": "Error Type",
+            "transaction": "Transaction"
+        }
+    }
+}

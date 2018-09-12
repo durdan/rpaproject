@@ -1,0 +1,33 @@
+
+{
+    "rpaprojectApp": {
+        "emailMessages" : {
+            "home": {
+                "title": "Email Messages",
+                "createLabel": "Create a new Email Messages",
+                "createOrEditLabel": "Create or edit a Email Messages"
+            },
+            "created": "A new Email Messages is created with identifier {{ param }}",
+            "updated": "A Email Messages is updated with identifier {{ param }}",
+            "deleted": "A Email Messages is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Email Messages {{ id }}?"
+            },
+            "detail": {
+                "title": "Email Messages"
+            },
+            "messageId": "Message Id",
+            "emailSubject": "Email Subject",
+            "emailBody": "Email Body",
+            "status": "Status",
+            "clientEmailAddress": "Client Email Address",
+            "receiveFrom": "Receive From",
+            "receivedTime": "Received Time",
+            "numberOfAttachments": "Number Of Attachments",
+            "attachments": "Attachments",
+            "emailAttachment": "Email Attachment",
+            "client": "Client",
+            "emailProcessingError": "Email Processing Error"
+        }
+    }
+}

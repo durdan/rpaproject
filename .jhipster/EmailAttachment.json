@@ -1,0 +1,55 @@
+{
+    "name": "EmailAttachment",
+    "fields": [
+        {
+            "fieldName": "messageId",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "clientEmailAddress",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "fileName",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "fileExtension",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "fileLocation",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "fileForOCRProcessing",
+            "otherEntityName": "fileForOCRProcessing",
+            "ownerSide": false,
+            "otherEntityRelationshipName": "emailAttachment"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "emailMessages",
+            "otherEntityName": "emailMessages",
+            "otherEntityField": "messageId"
+        }
+    ],
+    "changelogDate": "20180911192853",
+    "entityTableName": "email_attachment",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

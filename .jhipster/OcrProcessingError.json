@@ -1,0 +1,52 @@
+{
+    "name": "OcrProcessingError",
+    "fields": [
+        {
+            "fieldName": "clientEmailAddress",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "messageId",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "attachmentId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "fileId",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "errorMessage",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "createdDateTime",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "errorType",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "transaction",
+            "otherEntityName": "transaction",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "ocrProcessingError"
+        }
+    ],
+    "changelogDate": "20180911192858",
+    "entityTableName": "ocr_processing_error",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

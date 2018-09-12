@@ -1,0 +1,89 @@
+{
+    "name": "EmailMessages",
+    "fields": [
+        {
+            "fieldName": "messageId",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "emailSubject",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "emailBody",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "status",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "clientEmailAddress",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "receiveFrom",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "receivedTime",
+            "fieldType": "Instant",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "numberOfAttachments",
+            "fieldType": "Integer",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "attachments",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "emailAttachment",
+            "otherEntityName": "emailAttachment",
+            "otherEntityRelationshipName": "emailMessages"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "client",
+            "otherEntityName": "client",
+            "otherEntityField": "clientEmailAddress"
+        },
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "emailProcessingError",
+            "otherEntityName": "emailProcessingError",
+            "ownerSide": false,
+            "otherEntityRelationshipName": "emailMessages"
+        }
+    ],
+    "changelogDate": "20180911192852",
+    "entityTableName": "email_messages",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

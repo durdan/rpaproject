@@ -1,0 +1,54 @@
+{
+    "name": "OrgEmailConfig",
+    "fields": [
+        {
+            "fieldName": "emailServerHost",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "emailServerPort",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "emailServerUserId",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "emailServerPassword",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "createDate",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "createdBy",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "updateDate",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "updatedBy",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "orgName",
+            "otherEntityName": "organization",
+            "otherEntityField": "orgName"
+        }
+    ],
+    "changelogDate": "20180911192846",
+    "entityTableName": "org_email_config",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

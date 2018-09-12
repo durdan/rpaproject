@@ -1,0 +1,25 @@
+
+{
+    "rpaprojectApp": {
+        "clientEmailDomain" : {
+            "home": {
+                "title": "Client Email Domains",
+                "createLabel": "Create a new Client Email Domain",
+                "createOrEditLabel": "Create or edit a Client Email Domain"
+            },
+            "created": "A new Client Email Domain is created with identifier {{ param }}",
+            "updated": "A Client Email Domain is updated with identifier {{ param }}",
+            "deleted": "A Client Email Domain is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Client Email Domain {{ id }}?"
+            },
+            "detail": {
+                "title": "Client Email Domain"
+            },
+            "emailDomain": "Email Domain",
+            "description": "Description",
+            "isActive": "Is Active",
+            "client": "Client"
+        }
+    }
+}

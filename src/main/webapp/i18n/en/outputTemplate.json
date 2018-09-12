@@ -1,0 +1,28 @@
+
+{
+    "rpaprojectApp": {
+        "outputTemplate" : {
+            "home": {
+                "title": "Output Templates",
+                "createLabel": "Create a new Output Template",
+                "createOrEditLabel": "Create or edit a Output Template"
+            },
+            "created": "A new Output Template is created with identifier {{ param }}",
+            "updated": "A Output Template is updated with identifier {{ param }}",
+            "deleted": "A Output Template is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Output Template {{ id }}?"
+            },
+            "detail": {
+                "title": "Output Template"
+            },
+            "outputTemplateName": "Output Template Name",
+            "fieldName": "Field Name",
+            "position": "Position",
+            "fieldValidationRequire": "Field Validation Require",
+            "fieldValidationRule": "Field Validation Rule",
+            "client": "Client",
+            "clientDataOcr": "Client Data Ocr"
+        }
+    }
+}

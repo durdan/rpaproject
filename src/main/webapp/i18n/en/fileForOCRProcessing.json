@@ -1,0 +1,33 @@
+
+{
+    "rpaprojectApp": {
+        "fileForOCRProcessing" : {
+            "home": {
+                "title": "File For OCR Processings",
+                "createLabel": "Create a new File For OCR Processing",
+                "createOrEditLabel": "Create or edit a File For OCR Processing"
+            },
+            "created": "A new File For OCR Processing is created with identifier {{ param }}",
+            "updated": "A File For OCR Processing is updated with identifier {{ param }}",
+            "deleted": "A File For OCR Processing is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete File For OCR Processing {{ id }}?"
+            },
+            "detail": {
+                "title": "File For OCR Processing"
+            },
+            "fileInputType": "File Input Type",
+            "status": "Status",
+            "messageId": "Message Id",
+            "clientEmailAddress": "Client Email Address",
+            "retry": "Retry",
+            "createdDateTime": "Created Date Time",
+            "createdBy": "Created By",
+            "updateTimeStamp": "Update Time Stamp",
+            "updateBy": "Update By",
+            "emailAttachment": "Email Attachment",
+            "uploadFiles": "Upload Files",
+            "transaction": "Transaction"
+        }
+    }
+}

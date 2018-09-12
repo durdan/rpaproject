@@ -1,0 +1,29 @@
+
+{
+    "rpaprojectApp": {
+        "uploadFiles" : {
+            "home": {
+                "title": "Upload Files",
+                "createLabel": "Create a new Upload Files",
+                "createOrEditLabel": "Create or edit a Upload Files"
+            },
+            "created": "A new Upload Files is created with identifier {{ param }}",
+            "updated": "A Upload Files is updated with identifier {{ param }}",
+            "deleted": "A Upload Files is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Upload Files {{ id }}?"
+            },
+            "detail": {
+                "title": "Upload Files"
+            },
+            "clientEmailAddress": "Client Email Address",
+            "fileName": "File Name",
+            "fileExtension": "File Extension",
+            "uploadBy": "Upload By",
+            "uploadDateTime": "Upload Date Time",
+            "uploadLocation": "Upload Location",
+            "client": "Client",
+            "fileForOCRProcessing": "File For OCR Processing"
+        }
+    }
+}

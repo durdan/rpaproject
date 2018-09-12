@@ -1,0 +1,51 @@
+{
+    "name": "OutputTemplate",
+    "fields": [
+        {
+            "fieldName": "outputTemplateName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "fieldName",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "position",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "fieldValidationRequire",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "fieldValidationRule",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipName": "client",
+            "otherEntityName": "client",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipName": "clientDataOcr",
+            "otherEntityName": "clientDataOcr",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20180911192850",
+    "entityTableName": "output_template",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

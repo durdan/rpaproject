@@ -1,0 +1,38 @@
+{
+    "name": "FileToFtp",
+    "fields": [
+        {
+            "fieldName": "messageId",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "clientEmailAddress",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "status",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "fileType",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "clientDataOcr",
+            "otherEntityName": "clientDataOcr",
+            "otherEntityField": "clientEmailAddress"
+        }
+    ],
+    "changelogDate": "20180911192900",
+    "entityTableName": "file_to_ftp",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

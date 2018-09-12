@@ -1,0 +1,34 @@
+
+{
+    "rpaprojectApp": {
+        "transaction" : {
+            "home": {
+                "title": "Transactions",
+                "createLabel": "Create a new Transaction",
+                "createOrEditLabel": "Create or edit a Transaction"
+            },
+            "created": "A new Transaction is created with identifier {{ param }}",
+            "updated": "A Transaction is updated with identifier {{ param }}",
+            "deleted": "A Transaction is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Transaction {{ id }}?"
+            },
+            "detail": {
+                "title": "Transaction"
+            },
+            "createdDateTime": "Created Date Time",
+            "status": "Status",
+            "clientEmailAddress": "Client Email Address",
+            "messageId": "Message Id",
+            "fileName": "File Name",
+            "processType": "Process Type",
+            "createDate": "Create Date",
+            "createdBy": "Created By",
+            "updateDate": "Update Date",
+            "updatedBy": "Updated By",
+            "fileForOCRProcessing": "File For OCR Processing",
+            "ocrProcessingError": "Ocr Processing Error",
+            "clientDataOcr": "Client Data Ocr"
+        }
+    }
+}

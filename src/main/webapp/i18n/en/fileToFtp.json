@@ -1,0 +1,26 @@
+
+{
+    "rpaprojectApp": {
+        "fileToFtp" : {
+            "home": {
+                "title": "File To Ftps",
+                "createLabel": "Create a new File To Ftp",
+                "createOrEditLabel": "Create or edit a File To Ftp"
+            },
+            "created": "A new File To Ftp is created with identifier {{ param }}",
+            "updated": "A File To Ftp is updated with identifier {{ param }}",
+            "deleted": "A File To Ftp is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete File To Ftp {{ id }}?"
+            },
+            "detail": {
+                "title": "File To Ftp"
+            },
+            "messageId": "Message Id",
+            "clientEmailAddress": "Client Email Address",
+            "status": "Status",
+            "fileType": "File Type",
+            "clientDataOcr": "Client Data Ocr"
+        }
+    }
+}

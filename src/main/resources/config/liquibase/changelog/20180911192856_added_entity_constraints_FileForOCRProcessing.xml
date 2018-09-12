@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+    <!--
+        Added the constraints for entity FileForOCRProcessing.
+    -->
+    <changeSet id="20180911192856-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="email_attachment_id"
+                                 baseTableName="file_for_ocr_processing"
+                                 constraintName="fk_file_forocrprocessing_email_attachment_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="email_attachment"/>
+
+        <addForeignKeyConstraint baseColumnNames="upload_files_id"
+                                 baseTableName="file_for_ocr_processing"
+                                 constraintName="fk_file_forocrprocessing_upload_files_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="upload_files"/>
+
+    </changeSet>
+</databaseChangeLog>

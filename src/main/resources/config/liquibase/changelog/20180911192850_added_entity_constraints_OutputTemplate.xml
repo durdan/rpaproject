@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+    <!--
+        Added the constraints for entity OutputTemplate.
+    -->
+    <changeSet id="20180911192850-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="client_id"
+                                 baseTableName="output_template"
+                                 constraintName="fk_output_template_client_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="client"/>
+
+        <addForeignKeyConstraint baseColumnNames="client_data_ocr_id"
+                                 baseTableName="output_template"
+                                 constraintName="fk_output_template_client_data_ocr_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="client_data_ocr"/>
+
+    </changeSet>
+</databaseChangeLog>

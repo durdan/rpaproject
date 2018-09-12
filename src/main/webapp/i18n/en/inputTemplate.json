@@ -1,0 +1,29 @@
+
+{
+    "rpaprojectApp": {
+        "inputTemplate" : {
+            "home": {
+                "title": "Input Templates",
+                "createLabel": "Create a new Input Template",
+                "createOrEditLabel": "Create or edit a Input Template"
+            },
+            "created": "A new Input Template is created with identifier {{ param }}",
+            "updated": "A Input Template is updated with identifier {{ param }}",
+            "deleted": "A Input Template is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Input Template {{ id }}?"
+            },
+            "detail": {
+                "title": "Input Template"
+            },
+            "templateName": "Template Name",
+            "templateDescription": "Template Description",
+            "isActive": "Is Active",
+            "createDate": "Create Date",
+            "createdBy": "Created By",
+            "updateDate": "Update Date",
+            "updatedBy": "Updated By",
+            "client": "Client"
+        }
+    }
+}

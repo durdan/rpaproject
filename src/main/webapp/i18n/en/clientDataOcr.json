@@ -1,0 +1,28 @@
+
+{
+    "rpaprojectApp": {
+        "clientDataOcr" : {
+            "home": {
+                "title": "Client Data Ocrs",
+                "createLabel": "Create a new Client Data Ocr",
+                "createOrEditLabel": "Create or edit a Client Data Ocr"
+            },
+            "created": "A new Client Data Ocr is created with identifier {{ param }}",
+            "updated": "A Client Data Ocr is updated with identifier {{ param }}",
+            "deleted": "A Client Data Ocr is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Client Data Ocr {{ id }}?"
+            },
+            "detail": {
+                "title": "Client Data Ocr"
+            },
+            "keyName": "Key Name",
+            "value": "Value",
+            "messageId": "Message Id",
+            "clientEmailAddress": "Client Email Address",
+            "attachmentId": "Attachment Id",
+            "outputTemplate": "Output Template",
+            "transaction": "Transaction"
+        }
+    }
+}

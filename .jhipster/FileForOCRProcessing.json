@@ -1,0 +1,78 @@
+{
+    "name": "FileForOCRProcessing",
+    "fields": [
+        {
+            "fieldName": "fileInputType",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "status",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "messageId",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "clientEmailAddress",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "retry",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "createdDateTime",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "createdBy",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "updateTimeStamp",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "updateBy",
+            "fieldType": "Instant"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "emailAttachment",
+            "otherEntityName": "emailAttachment",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "fileForOCRProcessing"
+        },
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "uploadFiles",
+            "otherEntityName": "uploadFiles",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "fileForOCRProcessing"
+        },
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "transaction",
+            "otherEntityName": "transaction",
+            "ownerSide": false,
+            "otherEntityRelationshipName": "fileForOCRProcessing"
+        }
+    ],
+    "changelogDate": "20180911192856",
+    "entityTableName": "file_for_ocr_processing",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

@@ -1,0 +1,59 @@
+{
+    "name": "UploadFiles",
+    "fields": [
+        {
+            "fieldName": "clientEmailAddress",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "fileName",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "fileExtension",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "uploadBy",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "uploadDateTime",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "uploadLocation",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "client",
+            "otherEntityName": "client",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "fileForOCRProcessing",
+            "otherEntityName": "fileForOCRProcessing",
+            "ownerSide": false,
+            "otherEntityRelationshipName": "uploadFiles"
+        }
+    ],
+    "changelogDate": "20180911192855",
+    "entityTableName": "upload_files",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

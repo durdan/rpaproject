@@ -1,0 +1,29 @@
+
+{
+    "rpaprojectApp": {
+        "templateFields" : {
+            "home": {
+                "title": "Template Fields",
+                "createLabel": "Create a new Template Fields",
+                "createOrEditLabel": "Create or edit a Template Fields"
+            },
+            "created": "A new Template Fields is created with identifier {{ param }}",
+            "updated": "A Template Fields is updated with identifier {{ param }}",
+            "deleted": "A Template Fields is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Template Fields {{ id }}?"
+            },
+            "detail": {
+                "title": "Template Fields"
+            },
+            "fieldName": "Field Name",
+            "fieldZoneMinX": "Field Zone Min X",
+            "fieldZoneMinY": "Field Zone Min Y",
+            "fieldZoneMaxX": "Field Zone Max X",
+            "fieldZoneMaxY": "Field Zone Max Y",
+            "fieldValidationRequire": "Field Validation Require",
+            "fieldValidationRule": "Field Validation Rule",
+            "inputTemplate": "Input Template"
+        }
+    }
+}

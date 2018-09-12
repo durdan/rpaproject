@@ -1,0 +1,27 @@
+
+{
+    "rpaprojectApp": {
+        "emailProcessingError" : {
+            "home": {
+                "title": "Email Processing Errors",
+                "createLabel": "Create a new Email Processing Error",
+                "createOrEditLabel": "Create or edit a Email Processing Error"
+            },
+            "created": "A new Email Processing Error is created with identifier {{ param }}",
+            "updated": "A Email Processing Error is updated with identifier {{ param }}",
+            "deleted": "A Email Processing Error is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Email Processing Error {{ id }}?"
+            },
+            "detail": {
+                "title": "Email Processing Error"
+            },
+            "errorMessage": "Error Message",
+            "messageID": "Message ID",
+            "clientEmailAddress": "Client Email Address",
+            "receiveFrom": "Receive From",
+            "receivedTime": "Received Time",
+            "emailMessages": "Email Messages"
+        }
+    }
+}

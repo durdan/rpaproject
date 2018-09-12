@@ -1,0 +1,65 @@
+{
+    "name": "TemplateFields",
+    "fields": [
+        {
+            "fieldName": "fieldName",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "fieldZoneMinX",
+            "fieldType": "Double",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "fieldZoneMinY",
+            "fieldType": "Double",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "fieldZoneMaxX",
+            "fieldType": "Double",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "fieldZoneMaxY",
+            "fieldType": "Double",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "fieldValidationRequire",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "fieldValidationRule",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "inputTemplate",
+            "otherEntityName": "inputTemplate",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20180911192851",
+    "entityTableName": "template_fields",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

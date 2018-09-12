@@ -1,0 +1,30 @@
+
+{
+    "rpaprojectApp": {
+        "orgEmailConfig" : {
+            "home": {
+                "title": "Org Email Configs",
+                "createLabel": "Create a new Org Email Config",
+                "createOrEditLabel": "Create or edit a Org Email Config"
+            },
+            "created": "A new Org Email Config is created with identifier {{ param }}",
+            "updated": "A Org Email Config is updated with identifier {{ param }}",
+            "deleted": "A Org Email Config is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Org Email Config {{ id }}?"
+            },
+            "detail": {
+                "title": "Org Email Config"
+            },
+            "emailServerHost": "Email Server Host",
+            "emailServerPort": "Email Server Port",
+            "emailServerUserId": "Email Server User Id",
+            "emailServerPassword": "Email Server Password",
+            "createDate": "Create Date",
+            "createdBy": "Created By",
+            "updateDate": "Update Date",
+            "updatedBy": "Updated By",
+            "orgName": "Org Name"
+        }
+    }
+}

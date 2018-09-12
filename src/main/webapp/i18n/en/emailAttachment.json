@@ -1,0 +1,28 @@
+
+{
+    "rpaprojectApp": {
+        "emailAttachment" : {
+            "home": {
+                "title": "Email Attachments",
+                "createLabel": "Create a new Email Attachment",
+                "createOrEditLabel": "Create or edit a Email Attachment"
+            },
+            "created": "A new Email Attachment is created with identifier {{ param }}",
+            "updated": "A Email Attachment is updated with identifier {{ param }}",
+            "deleted": "A Email Attachment is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Email Attachment {{ id }}?"
+            },
+            "detail": {
+                "title": "Email Attachment"
+            },
+            "messageId": "Message Id",
+            "clientEmailAddress": "Client Email Address",
+            "fileName": "File Name",
+            "fileExtension": "File Extension",
+            "fileLocation": "File Location",
+            "fileForOCRProcessing": "File For OCR Processing",
+            "emailMessages": "Email Messages"
+        }
+    }
+}

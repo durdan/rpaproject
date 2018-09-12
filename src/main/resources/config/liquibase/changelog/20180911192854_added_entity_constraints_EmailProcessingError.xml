@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+    <!--
+        Added the constraints for entity EmailProcessingError.
+    -->
+    <changeSet id="20180911192854-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="email_messages_id"
+                                 baseTableName="email_processing_error"
+                                 constraintName="fk_email_processing_error_email_messages_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="email_messages"/>
+
+    </changeSet>
+</databaseChangeLog>
