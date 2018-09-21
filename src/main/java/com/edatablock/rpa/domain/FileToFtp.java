@@ -26,14 +26,18 @@ public class FileToFtp implements Serializable {
     @Column(name = "message_id")
     private String messageId;
 
+
+
     @Column(name = "client_email_address")
     private String clientEmailAddress;
 
     @Column(name = "status")
     private String status;
 
+    //comments
+
     @Column(name = "file_type")
-    private String fileType;
+    private String fileType;  //change the name of the project
 
     @ManyToOne
     @JsonIgnoreProperties("")

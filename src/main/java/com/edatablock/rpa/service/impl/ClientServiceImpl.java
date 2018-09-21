@@ -76,6 +76,7 @@ public class ClientServiceImpl implements ClientService {
             .map(clientMapper::toDto);
     }
 
+
     /**
      * Delete the client by id.
      *

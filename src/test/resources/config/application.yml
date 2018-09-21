@@ -43,6 +43,12 @@ spring:
             hibernate.hbm2ddl.auto: validate
     liquibase:
         contexts: test
+    activemq:
+            broker-url: vm://embedded?broker.persistent=false,useShutdownHook=false
+            in-memory: true
+            user: admin
+            password: admin
+            pooled: true
     mail:
         host: localhost
     messages:
@@ -52,7 +58,7 @@ spring:
             enabled: false
     thymeleaf:
         mode: HTML
-        
+
 
 server:
     port: 10344

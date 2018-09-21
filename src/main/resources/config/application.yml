@@ -47,6 +47,11 @@ spring:
             naming:
                 physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
                 implicit-strategy: org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy
+    activemq:
+        broker-url: tcp://localhost:61616
+        user: admin
+        password: admin
+        pooled: true
     messages:
         basename: i18n/messages
     mvc:
@@ -109,3 +114,4 @@ jhipster:
 # ===================================================================
 
 # application:
+
